@@ -2,7 +2,11 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./bg.jpg);
+  background: url(./data-original.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .Heading {
@@ -23,15 +27,33 @@ body {
 img {
   height: 200px;
   width: 300px;
-  margin: 20px;
+  margin-left: 612px;
+  margin-bottom: 80px;
   border: 10px solid rgb(255, 0, 221);
   display: flex;
   align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 button {
-  margin: 20px;
-  padding: 20px;
+  margin: 3px;
+  padding: 5px;
   justify-content: center;
-  color: rebeccapurple;
+  color: red;
+  background: rgba(195, 190, 201, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(208, 209, 221, 0.37);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  font-weight: bold;
+  border: 3px solid rgba(22, 38, 182, 0.18);
 }
