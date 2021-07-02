@@ -21,7 +21,7 @@ function getPokemonList(url) {
       });
       // Add a next pokemon button
       container.innerHTML += `<br><br><button onclick="getPokemonList('${data.next}')">Next</button>`;
-      container.innerHTML += `<br><br><button onclick="getPokemonList('${data.previous}')">Previous</button>`;
+      container.innerHTML += `<button onclick="getPokemonList('${data.previous}')">Previous</button>`;
     });
 }
 
@@ -37,7 +37,18 @@ function getPokemonInfo(url) {
       console.log(data);
       // Write data to pokemon information container
       document.querySelector(".pokemon-info").innerHTML = `
-    <img src="${data.sprites.front_default} ">
+    <img src="${data.sprites.other.dream_world.front_default} ">
     `;
+      document.querySelector(".pokemon-info").innerHTML += `<br><span> ${
+        "Weight:" + data.weight + "kg" + ""
+      }</span>`;
+
+      document.querySelector(".pokemon-info").innerHTML += `<br><span> ${
+        "Height:" + data.height + "m" + ""
+      }</span>`;
+
+      document.querySelector(".pokemon-info").innerHTML += `<br><span> ${
+        "Name:" + data.name + "" + ""
+      }</span>`;
     });
 }
