@@ -76,9 +76,9 @@ span {
 button:hover {
   color: #34a0a4;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 602px) {
   body {
-    background: url(./img.jpeg);
+    background: url(./data-original.jpg);
     background-repeat: no-repeat;
     background-position: cover;
     background-size: cover;
